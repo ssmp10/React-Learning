@@ -65,14 +65,12 @@ const App = () => {
             return <div key={idx} className='flex justify-between flex-col items-start relative h-52 w-40 rounded-2xl text-black pt-9 pb-4 py-9 px-4 bg-cover bg-[url("https://static.vecteezy.com/system/resources/thumbnails/010/793/873/small/a-lined-note-paper-covered-with-transparent-tape-on-a-yellow-background-with-a-white-checkered-pattern-free-png.png")]'>
               <div>
                 <h3 className='leading-tight text-xl font-bold'>{elem.title}</h3>
-              <p className='mt-4 leading-tight font-medium text-gray-500'>{elem.detail}</p>
+                <p className='mt-4 leading-tight font-medium text-gray-500'>{elem.detail}</p>
               </div>
 
               <button onClick={() => {
                 deleteNote(idx)
               }} className='w-full cursor-pointer active:scale-95 bg-red-400 py-1 text-xs rounded font-bold text-white'>Delete</button>
-              
-              
             </div>
           })}
 
